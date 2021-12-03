@@ -1,0 +1,5 @@
+{
+    "EXAMPLE": "some-string",
+    "SENTRY_DSN": "",
+    "SENTRY_ENABLED": "1"
+}

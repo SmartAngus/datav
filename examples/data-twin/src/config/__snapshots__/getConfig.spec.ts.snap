@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`development matches snapshot 1`] = `
+Object {
+  "EXAMPLE": "string-in-development",
+  "SENTRY_DSN": "",
+  "SENTRY_ENABLED": "0",
+}
+`;
+
+exports[`production matches snapshot 1`] = `
+Object {
+  "EXAMPLE": "string-in-production",
+  "SENTRY_DSN": "",
+  "SENTRY_ENABLED": "1",
+}
+`;
+
+exports[`staging matches snapshot 1`] = `
+Object {
+  "EXAMPLE": "string-in-staging",
+  "SENTRY_DSN": "",
+  "SENTRY_ENABLED": "1",
+}
+`;

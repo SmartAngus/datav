@@ -1,0 +1,74 @@
+{
+  "name": "data-twin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/react": "^6.2.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.1.10",
+    "@topology/activity-diagram": "^0.3.0",
+    "@topology/chart-diagram": "^0.5.2",
+    "@topology/class-diagram": "^0.3.0",
+    "@topology/core": "^0.5.31",
+    "@topology/flow-diagram": "^0.3.0",
+    "@topology/input-diagram": "^0.0.3",
+    "@topology/layout": "^0.3.0",
+    "@topology/sequence-diagram": "^0.3.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "copyfiles": "^2.4.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "str-utils": "^1.0.0",
+    "typescript": "^4.5.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "type-check": "tsc",
+    "lint": "eslint .",
+    "postinstall": "scripts/postinstall"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "type-fest": "^2.8.0"
+  }
+}
