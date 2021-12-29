@@ -1,28 +1,40 @@
 {
-    "compileOnSave": false,
     "compilerOptions": {
-      "baseUrl": ".",
-      "outDir": "./dist",
-      "sourceMap": true,
-      "declaration": true,
+      "experimentalDecorators": true,
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
       "module": "esnext",
       "moduleResolution": "node",
-      "target": "es5",
-      "allowJs": true,
-      "lib": ["es2018", "dom"],
       "resolveJsonModule": true,
-      "allowSyntheticDefaultImports":true,
-      "paths": {
-        "@topology/core": ["packages/core"],
-        "@topology/core/*": ["packages/core/src/*"],
-        "@topology/flow-diagram": ["packages/flow-diagram"],
-        "@topology/activity-diagram": ["packages/activity-diagram"],
-        "@topology/class-diagram": ["packages/class-diagram"],
-        "@topology/sequence-diagram": ["packages/sequence-diagram"],
-        "@topology/chart-diagram": ["packages/chart-diagram"],
-        "@topology/layout": ["packages/layout"]
-      }
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react"
     },
-    "include": ["packages/**/*"],
-    "exclude": ["node_modules", "dist", "**/*.spec.ts"]
-  }
+    "paths": {
+      "@topology/core": ["packages/core"],
+      "@topology/core/*": ["packages/core/src/*"],
+      "@topology/flow-diagram": ["packages/flow-diagram"],
+      "@topology/activity-diagram": ["packages/activity-diagram"],
+      "@topology/class-diagram": ["packages/class-diagram"],
+      "@topology/sequence-diagram": ["packages/sequence-diagram"],
+      "@topology/chart-diagram": ["packages/chart-diagram"],
+      "@topology/layout": ["packages/layout"]
+    },
+  "include": ["packages/**/*", "examples/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
+  

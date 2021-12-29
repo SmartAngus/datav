@@ -1,11 +1,4 @@
-export enum KeyType {
-  Any = -1,
-  CtrlOrAlt,
-  Ctrl,
-  Shift,
-  Alt,
-  Right,
-}
+import { Padding } from './utils/padding';
 
 export enum KeydownType {
   None = -1,
@@ -13,23 +6,19 @@ export enum KeydownType {
   Canvas,
 }
 
-export type Padding = number | string | number[];
-
 export interface Options {
-  cacheLen?: number;
-  extDpiRatio?: number;
-  width?: string | number;
-  height?: string | number;
   color?: string;
   activeColor?: string;
+  activeBackground?: string;
   hoverColor?: string;
+  hoverBackground?: string;
+  anchorColor?: string;
   anchorRadius?: number;
-  anchorFillStyle?: string;
-  dockStrokeStyle?: string;
-  dockFillStyle?: string;
+  anchorBackground?: string;
+  dockColor?: string;
   dragColor?: string;
   animateColor?: string;
-  fontColor?: string;
+  textColor?: string;
   fontFamily?: string;
   fontSize?: number;
   lineHeight?: number;
@@ -37,48 +26,46 @@ export interface Options {
   textBaseline?: string;
   rotateCursor?: string;
   hoverCursor?: string;
-  hideInput?: boolean;
-  hideRotateCP?: boolean;
-  hideSizeCP?: boolean;
-  hideAnchor?: boolean;
-  disableSizeX?: boolean;
-  disableSizeY?: boolean;
-  anchorSize?: number;
+  disableInput?: boolean;
+  disableRotate?: boolean;
+  disableSize?: boolean;
+  disableAnchor?: boolean;
+  disableWidth?: boolean;
+  disableHeight?: boolean;
   alwaysAnchor?: boolean;
   autoAnchor?: boolean;
   disableEmptyLine?: boolean;
   disableRepeatLine?: boolean;
   disableScale?: boolean;
   disableTranslate?: boolean;
-  disableMoveOutParent?: boolean;
+  // disableMoveOutParent?: boolean;
   disableDockLine?: boolean;
   playIcon?: string;
   pauseIcon?: string;
   fullScreenIcon?: string;
   loopIcon?: string;
-  translateKey?: KeyType;
-  scaleKey?: KeyType;
+  rightMouseTranslate?: boolean;
   minScale?: number;
   maxScale?: number;
   keydown?: KeydownType;
-  viewPadding?: Padding;
-  bkColor?: string;
+  background?: string;
   grid?: boolean;
   gridColor?: string;
   gridSize?: number;
   rule?: boolean;
   ruleColor?: string;
-  refresh?: number;
-  on?: (event: string, data: any) => void;
-  scroll?: boolean;   // 是否启用滚动条
+  drawingLineName?: string;
+  fromArrow?: string;
+  toArrow?: string;
+  autoPolyline?: boolean;
+  interval?: number;
+  animateInterval?: number;
+  dragAllIn?: boolean;
+  scroll?: boolean;
 }
 
-export const fontKeys = ['fontColor', 'fontFamily', 'fontSize', 'lineHeight', 'textAlign', 'textBaseline'];
-
-export const DefalutOptions: Options = {
-  cacheLen: 30,
-  refresh: 30,
-  fontColor: '#222222',
+export const defaultOptions: Options = {
+  textColor: '#222222',
   fontFamily: '"Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial',
   fontSize: 12,
   lineHeight: 1.5,
@@ -86,20 +73,23 @@ export const DefalutOptions: Options = {
   textBaseline: 'middle',
   color: '#222222',
   activeColor: '#1890ff',
-  hoverColor: '#fa541c',
+  hoverColor: '#ff7a45',
+  anchorColor: '#fa541c',
   anchorRadius: 4,
-  anchorFillStyle: '#fff',
-  dockStrokeStyle: '#fa541c',
-  dockFillStyle: '#fa541c',
+  anchorBackground: '#fff',
+  dockColor: '#fa541c',
   dragColor: '#1890ff',
   rotateCursor: '/assets/img/rotate.cur',
   hoverCursor: 'pointer',
-  minScale: 0.3,
-  maxScale: 5,
-  anchorSize: 5,
+  minScale: 0.1,
+  maxScale: 10,
   keydown: KeydownType.Document,
-  viewPadding: 0,
-  gridSize: 10,
-  gridColor: '#f3f3f3',
+  gridSize: 20,
+  gridColor: '#e2e2e2',
   ruleColor: '#888888',
+  drawingLineName: 'curve',
+  interval: 30,
+  animateInterval: 30,
+  autoPolyline: true,
+  autoAnchor: true,
 };

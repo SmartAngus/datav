@@ -1,8 +1,8 @@
 {
   "name": "@topology/chart-diagram",
-  "version": "0.5.2",
-  "description": "A chart tool using le5le-topology.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "The charting library based on le5le topology and echarts/highcharts.",
+  "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {
     "copy": "copyfiles  package.json ../../dist/chart-diagram/",
@@ -10,31 +10,25 @@
   },
   "keywords": [
     "topology",
-    "chart",
-    "canvas"
+    "echarts",
+    "canvas",
+    "highcharts"
   ],
   "author": "alsmile123@qq.com",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/le5le-com/topology.git"
+    "url": "git+https://github.com/le5le-com/topology.js.git"
   },
   "bugs": {
-    "url": "https://github.com/le5le-com/topology/issues"
+    "url": "https://github.com/le5le-com/topology.js/issues"
   },
-  "homepage": "https://github.com/le5le-com/topology#readme",
+  "homepage": "https://github.com/le5le-com/topology.js#readme",
   "peerDependencies": {
-    "@topology/core": "^0.3.0"
+    "@topology/core": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "78f2a53ca1839c89b56e2e498d17ba4eb987ad14",
-  "dependencies": {
-    "copyfiles": "^2.4.1",
-    "typescript": "^4.5.2"
-  },
-  "devDependencies": {
-    "type-fest": "^2.8.0"
-  }
+  "gitHead": "78f2a53ca1839c89b56e2e498d17ba4eb987ad14"
 }

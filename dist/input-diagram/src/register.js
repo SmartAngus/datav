@@ -1,6 +1,0 @@
-import { registerNode } from '@topology/core';
-import { textbox } from './textbox';
-export function register() {
-    registerNode('textbox', textbox);
-}
-//# sourceMappingURL=register.js.map

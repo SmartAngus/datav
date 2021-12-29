@@ -1,6 +1,8 @@
-# topology-sequence-diagram
+English | [简体中文](./README.CN.md)
 
-Topology-sequence-diagram is a sequence diagram tool using le5le-topology.
+# sequence-diagram
+
+The sequence library based on le5le topology.
 
 # How to Contribute
 

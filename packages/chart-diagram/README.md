@@ -1,8 +1,8 @@
 English | [简体中文](./README.CN.md)
 
-# topology-chart-diagram
+# chart-diagram
 
-Topology-chart-diagram is a chart tool import other chart libs.
+The charting library based on le5le topology and echarts/highcharts.
 
 # How to Contribute
 

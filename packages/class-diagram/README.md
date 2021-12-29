@@ -1,6 +1,8 @@
-# topology-class-diagram
+English | [简体中文](./README.CN.md)
 
-Topology-class-diagram is a class diagram tool using le5le-topology.
+# class-diagram
+
+The class library based on le5le topology.
 
 # How to Contribute
 

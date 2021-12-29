@@ -1,10 +1,9 @@
-import { registerNode } from '@topology/core';
-import {
-  simpleClass, simpleClassIconRect, simpleClassTextRect,
-  interfaceClass, interfaceClassIconRect, interfaceClassTextRect
-} from './class';
+import { interfaceClass } from './interfaceClass';
+import { simpleClass } from './simpleClass';
 
-export function register() {
-  registerNode('simpleClass', simpleClass, undefined, simpleClassIconRect, simpleClassTextRect);
-  registerNode('interfaceClass', interfaceClass, undefined, interfaceClassIconRect, interfaceClassTextRect);
+export function classPens() {
+  return {
+    interfaceClass,
+    simpleClass,
+  };
 }

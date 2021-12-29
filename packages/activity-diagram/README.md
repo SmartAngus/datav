@@ -1,6 +1,8 @@
-# topology-activity-diagram
+English | [简体中文](./README.CN.md)
 
-Topology-activity-diagram is a activity diagram tool using le5le-topology.
+# activity-diagram
+
+The activity library based on le5le topology.
 
 # How to Contribute
 

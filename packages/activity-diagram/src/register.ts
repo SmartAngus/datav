@@ -1,13 +1,20 @@
-import { registerNode } from '@topology/core';
-import { activityFinal, activityFinalIconRect, activityFinalTextRect } from './final';
-import { fork, forkHAnchors, forkVAnchors, forkIconRect, forkTextRect } from './fork';
-import { swimlaneH, swimlaneHIconRect, swimlaneHTextRect } from './swimlaneH';
-import { swimlaneV, swimlaneVIconRect, swimlaneVTextRect } from './swimlaneV';
+import { activityFinal } from './final';
+// TODO: 该图形像个矩形，考虑删除
+import { fork } from './fork';
+import { swimlaneH } from './swimlaneH';
+import { swimlaneV } from './swimlaneV';
 
-export function register() {
-  registerNode('activityFinal', activityFinal, undefined, activityFinalIconRect, activityFinalTextRect);
-  registerNode('swimlaneV', swimlaneV, undefined, swimlaneVIconRect, swimlaneVTextRect);
-  registerNode('swimlaneH', swimlaneH, undefined, swimlaneHIconRect, swimlaneHTextRect);
-  registerNode('forkH', fork, forkHAnchors, forkIconRect, forkTextRect);
-  registerNode('forkV', fork, forkVAnchors, forkIconRect, forkTextRect);
+export function activityDiagram() {
+  return {
+    forkV: fork,
+    forkH: fork,
+    swimlaneH,
+    swimlaneV,
+  };
+}
+
+export function activityDiagramByCtx() {
+  return {
+    activityFinal,
+  };
 }

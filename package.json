@@ -4,6 +4,7 @@
   "private": true,
   "workspaces": [
     "packages/*",
+    "examples/*",
     "bundle"
   ],
   "publishConfig": {
@@ -20,6 +21,7 @@
     "lerna": "^4.0.0",
     "typedoc": "^0.17.7",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "stats.js": "latest"
   }
 }
